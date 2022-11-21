@@ -41,7 +41,7 @@ app.get('/api/countries', (req, res, next) => {
 app.get('/api/:country/:date', (req, res, next) => {
   // Does country exist
   if(!data[req.params.country]) {
-    res.status(404).json({ message: `Country ${req.params.country} not found`})
+    res.status(404).json({ message: `Country ${req.params.country} not found!`})
     return;
   }
 
